@@ -13,9 +13,13 @@
 	</div>
 	<div id="columns">
 		<div id="side">
-			<div id="cart">
+			
+			<% if @cart %>
+				<%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
 				<%= render @cart %>
-			</div>
+				<% end %>
+			<% end %>
+			
 			
 			<ul>
 				<%= l Time.now, :format => :short %> <br>
@@ -31,3 +35,4 @@
 	</div>
 </body>
 </html>
+
