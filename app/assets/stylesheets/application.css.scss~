@@ -108,11 +108,7 @@
     }
 
     .submit {
-      margin-left: 4em;
-    }
-
-    br {
-      display: none
+      marg
     }
   }
 }

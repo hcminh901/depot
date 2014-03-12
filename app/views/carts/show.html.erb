@@ -1,7 +1,7 @@
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
-
+<%= render @cart %>
 <h2>Your Cart</h2>
 <table>
 	<%= render(@cart.line_items) %>
