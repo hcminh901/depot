@@ -21,7 +21,6 @@
 			<% end %>
 
 			<ul>
-				<%= l Time.now, :format => :short %> <br>
 				<li><a href="http://www...."><%= t('.home') %></a></li>
 				<li><a href="http://www..../faq"><%= t('.questions') %></a></li>
 				<li><a href="http://www..../news"><%= t('.news') %></a></li>
